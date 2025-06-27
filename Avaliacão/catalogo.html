@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - CineHub</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CineHub</h1>
+        <p>Seu guia definitivo para séries e filmes</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>Nosso Catálogo</h2>
+        
+        <section class="filtros">
+            <button class="ativo" data-categoria="todos">Todos</button>
+            <button data-categoria="series">Séries</button>
+            <button data-categoria="filmes">Filmes</button>
+            <button data-categoria="documentarios">Documentários</button>
+        </section>
+        
+        <section class="catalogo-grid">
+            <div class="card" data-categoria="series">
+                <figure>
+                    <img src="Suquinhodelaranja.avif" alt="Stranger Things">
+                    <figcaption>Stranger Things</figcaption>
+                </figure>
+                <div class="card-content">
+                    <h3>Suco de laranja pra "relaxa"</h3>
+                    <p>A aventura de Jailson mendes, que so queria um suco de lranja para relaxar</p>
+                    <span class="avaliacao">★★★★☆</span>
+                </div>
+            </div>
+            
+            <div class="card" data-categoria="filmes">
+                <figure>
+                    <img src="Aprofunda.jpeg" alt="Duna">
+                    <figcaption>A profunda</figcaption>
+                </figure>
+                <div class="card-content">
+                    <h3>A profunda</h3>
+                    <p>Existe um buraco fundo em Dread hot, será em suas emoções e seu grande coração?</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </div>
+            
+            <div class="card" data-categoria="documentarios">
+                <figure>
+                    <img src="O medico.jpeg" alt="The Last Dance">
+                    <figcaption>O medico</figcaption>
+                </figure>
+                <div class="card-content">
+                    <h3>O medico</h3>
+                    <p>Documentário sobre a carreira de Johnny sins um grande medico, "pode confiar sua esposa a ele"</p>
+                    <span class="avaliacao">★★★★★</span>
+                </div>
+            </div>
+            
+            <!-- Mais cards podem ser adicionados aqui -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 CineHub - Todos os direitos reservados</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
